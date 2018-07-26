@@ -1,7 +1,7 @@
 # CurrentHomeTest
 Home test for Current
 
-This a simple app with 2 activities:
+This a simple native Android app with 2 activities:
 1. MainActivity in which the app is requesting location permission from user, and then based on user's location it makes a Google Places API request to find all nearby Burrito joints.
 After parsing the JSON response, the app presents all places in a RecyclerView, that loads 20 more places whenever the user scrolls to the end of the list (up to 60 places in total).
 When a user clicks an item on the list, the app will open a new Map Activity that will show the place and its details on a Google Map using a drawbale resource marker.
