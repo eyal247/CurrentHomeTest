@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Burrito Places</string>
+    <string name="bullet_point">\u2022</string>
+    <string name="google_maps_api_key">AIzaSyAHVhL7VhaZ4BG-HfILxUsqGZqafzCv3Ps</string>
+    <string name="check_internet_connection">Please make sure you are\nconnected to the internet</string>
+    <string name="no_connection_msg">No Internet Connection!</string>
+    <string name="go_to_settings">Please go to device settings and\nallow the app to use your location.\nThen restart the app</string>
+    <string name="burrito_null_response_toast">Couldn\'t fetch burrito places</string>
+    <string name="location_permission_title">Location Permission</string>
+    <string name="location_permission_msg">This app needs to use your location</string>
+</resources>

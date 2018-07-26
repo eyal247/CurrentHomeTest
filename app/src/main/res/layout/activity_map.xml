@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:clipToPadding="false"
+    android:outlineProvider="bounds"
+    android:orientation="vertical"
+    android:paddingBottom="32dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="32dp"
+    android:weightSum="1"
+    tools:context=".Activities.MapActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:clipToPadding="false"
+        android:outlineProvider="bounds"
+        android:elevation="3dp">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MapsActivity" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="@color/colorPrimary"
+        android:elevation="3dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/map_place_address_tv"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="265 W 87th Street"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/map_price_stars_ll"
+            android:layout_below="@+id/map_place_address_tv"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/map_price_level_tv"
+                    android:layout_centerVertical="true"
+                    android:textSize="18sp"
+                    android:text="$$$"
+                    android:textColor="@android:color/white"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/map_bullet_point_tv"
+                    android:layout_centerVertical="true"
+                    android:text="@string/bullet_point"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/map_place_ranking_bar"
+                    android:layout_centerVertical="true"
+                    android:numStars="5"
+                    android:max="5"
+                    android:stepSize="0.1"
+                    android:theme="@style/MyRatingBar"
+                    style="?attr/ratingBarStyleSmall"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

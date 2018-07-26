@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6E00FF</color>
+    <color name="colorPrimaryDark">#410099</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAddressText">#4c4c4c</color>
+    <color name="colorPriceLevelText">#A5A5A5</color>
+    <color name="colorBackground">#EFF0F2</color>
+    <color name="colorPlaceDetailsBG">#6E00FF</color>
+    <color name="colorPlaceTitle">#6E00FF</color>
+    <color name="colorNoConnectionMsg">#A5A5A5</color>
+    <color name="colorListRowBG">#FFFFFF</color>
+</resources>
